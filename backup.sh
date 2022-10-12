@@ -70,3 +70,8 @@ tar -czvf $backupFileName ${toBackup[@]}
 # [TASK 13]
 mv $backupFileName $destAbsPath
 # Congratulations! You completed the final project for this course!
+# back up every minutes 
+#corntab -e
+#*/1 * * * * /usr/local/bin/backup.sh /home/project/important-documents /home/project
+#sudo service cron start
+#sudo service cron stop
